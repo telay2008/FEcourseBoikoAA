@@ -10,10 +10,23 @@
         <meta name="description" content="ЭнергоОпора">
                 <!--Ключевые слова для данной страницы-->
         <meta name="keyworlds" content="Электромонтажные работы, электроотопление, проектирование, видеонаблюдение, электрофизические измерения, локальные системы">
+                <!--Подключение стилей CSS-->
+        <link rel="stylesheet" href="css/main.css">
         <title>Главная страница</title>
     </head>
     <body>
-                <!-- шапка сайта -->
+        <header>Щапка</header>
+        <main>Основная часть сайта</main>
+        <aside>Бокавая часть части</aside>
+        <footer>Футер</footer>
+
+                <!--Работает не на всех браузерах-->
+        <datalist>
+                <summary>Подробнее</summary>
+                Саня лучший!
+        </datalist>
+        
+
         <a name="upOfPage"></a>
         <h1>Заголовок 1</h1>
         <h2>Заголовок 2</h2>
@@ -65,11 +78,90 @@
         <a href="#upOfPage">На начало страницы</a></br>
                 <!--ссылка на электронную почту с открытием почтового клиента-->
         <a href="mailto:telay2008@mail.ru">Написать на почту</a></br>
+                
+                <!--Загрузка картинки с инэта-->
+        <img src="https://podari24.com/upload/iblock/ac4/ac46212676dd30a0612e9d49b9d6466b.png" width="100" height="100" title="Саня лучший" alt="Саня всегда прав">
+                <!--Загрузка картинки с компьбтера-->
+        <img src="img/Саня всегда прав.png" width="100" alt="Саня всегда прав">
+
+                <!--Таблица, border - граница таблицы, width - ширина таблицы, align - выравнивание по центру и т.д. лучше добавлять через css--> 
+        <table border="1" width="500px">
+               <!--описание шапки таблицы-->
+            <thead>
+                <!--описание ряда таблицы-->
+              <tr>
+                <!--Заголовок столбцов (выделяется жирным курсивом и выравнивание по центру)-->  
+                <th>Имя</th>
+                <th>Фамилия</th>
+              </tr>
+            </thead>
+                <!--описание основной таблицы-->
+            <tbody align="center">
+              <tr>
+                <!--столбцы ниже заголовочных (обычный текст)-->
+                <td>Саня</td>
+                <td>Бойко</td>
+              </tr>
+              <tr>
+                <td>Макс</td>
+                <td>Бойко</td>
+              </tr>
+              <tr>
+                <td>Юра</td>
+                <td>Бойко</td>
+              </tr>
+             </tbody>
+                <!--описание футера таблицы-->
+             <tfoot>
+               <tr>
+                <td>Бразер</td>
+                <td>Мазер</td>
+               </tr>
+             </tfoot>
+        </table>
+                <!--С помощью div лучше создавать блоки-->
+        <div>Просто текст</div>
+                <!--span - строчный тег (не забирает всю строку), в дальнейшем добавляються стили через CSS-->
+        <span>Просто текст</span>
+
+        <form action="отправляет данные на другую страницу" method="post">
+          <label>Введите имя</label>
+                <!--Поле для ввода-->
+                <input type="text" placeholder="Введите что-то" value="" maxlength="10">      
+        </form>
+
+        <form action="отправляет данные на другую страницу" method="post">
+                      <label>Введите пароль</label>
+                      <input type="password"><br>
+                      <label>Введите электронную почту'</label>
+                      <input type="email"><br>
+                      <input type="date"><br>
+                      <input type="time"><br>
+                      <input type="datetime"><br>
+                      <input type="checkbox"><br>
+                      <input type="radio" name="state"><br>
+                      <input type="file"><br>
+                      <input type="search"><br>
+                      <input type="button" value="Кнопка"><br>
+                      <input type="submit" value="Отправить">
+                      <input type="reset" value="Очистить"><br>
+        </form>
+        <form>
+                <textarea placeholder="Введите что-то" maxlength="100"></textarea>
+                <button type="">Готово</button>
+        </form>
+                <!--Селекторы выбора-->
+        <form>
+                <select>
+                        <option disabled selected>------</option>
+                        <option>BMW</option>
+                        <option>Audi</option>
+                        <option>Mercedes</option>
+                </select>
+        </form>
 
 
-
-
-
-        
+                <!--Подключение javascript-->
+        <script scr="javascript/main.js"></script>
     </body>
 </html>
